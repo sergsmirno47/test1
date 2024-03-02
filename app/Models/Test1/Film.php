@@ -11,6 +11,8 @@ class Film extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $visible = ['id', 'title', 'status'];
+
     protected $table = 'films';
     protected $guarded = false;
 
