@@ -15,7 +15,7 @@ class ApiFilmController extends Controller
      */
     public function index()
     {
-        return Film::all();
+        return Film::orderByDesc('created_at')->paginate(10);
     }
 
     /**
