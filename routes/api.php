@@ -18,3 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::apiResource('apiFilms', \App\Http\Controllers\Test1\ApiFilmController::class);
+Route::apiResource('apiGenres', \App\Http\Controllers\Test1\ApiGenreController::class);
