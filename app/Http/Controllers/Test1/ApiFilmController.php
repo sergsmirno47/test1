@@ -35,9 +35,9 @@ class ApiFilmController extends Controller
      * @param  \App\Models\Test1\Film  $film
      * @return \Illuminate\Http\Response
      */
-    public function show(Film $film)
+    public function show($id)
     {
-        //
+        return Film::findOrFail($id)->toArray();
     }
 
     /**
