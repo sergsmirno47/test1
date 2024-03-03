@@ -11,6 +11,8 @@ class Genre extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $visible = ['id', 'title'];
+
     protected $table = 'genres';
     protected $guarded = false;
 
